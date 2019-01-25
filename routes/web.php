@@ -14,6 +14,8 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+Route::get('/post{id}', 'IndexController@show');
+Route::get('/','IndexController@execute');
+Route::get('main','IndexController@execute');
 
-Route::any('/','IndexController@execute');
 
